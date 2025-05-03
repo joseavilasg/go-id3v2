@@ -5,9 +5,7 @@
 package id3v2
 
 import (
-	// "bytes"
 	"encoding/binary"
-	// "fmt"
 	"io"
 )
 
@@ -26,26 +24,21 @@ type SynchronisedLyricsFrame struct {
 	SynchronizedTexts []SyncedText
 }
 
-type TimestampFormat int
-
 const (
-	Unknown TimestampFormat = iota
-	AbsoluteMpegFrames
-	AbsoluteMilliseconds
+	SYLTAbsoluteMpegFramesTimestampFormat = iota + 1
+	SYLTAbsoluteMillisecondsTimestampFormat
 )
 
-var (
-	ContentType = map[int]string{
-		0: "Other",
-		1: "Lyrics",
-		2: "Transcription",
-		3: "Movement",
-		4: "Events",
-		5: "Chord",
-		6: "Trivia",
-		7: "WebpageUrls",
-		8: "ImageUrls",
-	}
+const (
+	SYLTOtherContentType = iota
+	SYLTLyricsContentType
+	SYLTTextTranscriptionContentType
+	SYLTMovementContentType
+	SYLTEventsContentType
+	SYLTChordContentType
+	SYLTTriviaContentType
+	SYLTWebpageURLsContentType
+	SYLTImageURLsContentType
 )
 
 type SyncedText struct {
