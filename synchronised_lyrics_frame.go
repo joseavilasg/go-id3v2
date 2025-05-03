@@ -99,7 +99,7 @@ func (sylf SynchronisedLyricsFrame) WriteTo(w io.Writer) (n int64, err error) {
 	})
 }
 
-func parseSynchronisedLyricsFrame(br *bufReader) (Framer, error) {
+func parseSynchronisedLyricsFrame(br *bufReader, version byte) (Framer, error) {
 	encoding := getEncoding(br.ReadByte())
 	language := br.Next(3)
 	timestampFormat := br.ReadByte()
