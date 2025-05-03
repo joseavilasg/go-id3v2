@@ -5,12 +5,12 @@ Implementation of ID3 v2.3 and v2.4 in native Go.
 ## Installation
 
 ```
-go get -u github.com/joseavilasg/id3v2/v2
+go get -u github.com/joseavilasg/id3v2
 ```
 
 ## Documentation
 
-https://pkg.go.dev/github.com/joseavilasg/id3v2/v2
+https://pkg.go.dev/github.com/joseavilasg/id3v2
 
 ## Usage example
 
@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/joseavilasg/id3v2/v2"
+	"github.com/joseavilasg/id3v2"
 )
 
 func main() {

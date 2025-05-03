@@ -1,4 +1,4 @@
-module github.com/joseavilasg/id3v2/v2
+module github.com/joseavilasg/id3v2
 
 go 1.24
 

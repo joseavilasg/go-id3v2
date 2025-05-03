@@ -8,7 +8,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/joseavilasg/id3v2/v2"
+	"github.com/joseavilasg/id3v2"
 )
 
 func Example() {
