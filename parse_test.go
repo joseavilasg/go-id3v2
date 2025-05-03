@@ -487,8 +487,8 @@ func TestParseReaderNil(t *testing.T) {
 	}
 }
 
-// https://github.com/bogem/id3v2/issues/13.
-// https://github.com/bogem/id3v2/commit/3845103da5b1698289b82a90f5d2559b770bd996
+// https://github.com/joseavilasg/id3v2/issues/13.
+// https://github.com/joseavilasg/id3v2/commit/3845103da5b1698289b82a90f5d2559b770bd996
 func TestParseV3UnsafeSize(t *testing.T) {
 	t.Parallel()
 

@@ -57,7 +57,7 @@ func TestReadTillZero(t *testing.T) {
 //
 // E.g. this can happen in comment frame with empty description and encoded in UTF16 with BOM.
 //
-// See https://github.com/bogem/id3v2/issues/53.
+// See https://github.com/joseavilasg/id3v2/issues/53.
 func TestReadTextUTF16WithLeadingEmptyString(t *testing.T) {
 	t.Parallel()
 
