@@ -169,9 +169,9 @@ func (br *bufReader) ReadText(encoding Encoding) []byte {
 	delims := encoding.TerminationBytes
 	text, br.err = br.readTillDelims(delims)
 
-	// See https://github.com/joseavilasg/id3v2/issues/51.
+	// See https://github.com/joseavilasg/go-id3v2/issues/51.
 	if encoding.Equals(EncodingUTF16) &&
-		// See https://github.com/joseavilasg/id3v2/issues/53#issuecomment-604038434.
+		// See https://github.com/joseavilasg/go-id3v2/issues/53#issuecomment-604038434.
 		!bytes.Equal(text, bom) {
 		text = append(text, br.ReadByte())
 	}

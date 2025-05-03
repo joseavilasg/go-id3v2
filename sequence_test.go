@@ -37,7 +37,7 @@ func TestSequencePictureFramesUniqueness(t *testing.T) {
 	testSequenceCount(t, s, 1)
 	testFrameUniqueIdentifier(t, s.Frames()[0], "00A")
 
-	// Test against https://github.com/joseavilasg/id3v2/issues/65 regression.
+	// Test against https://github.com/joseavilasg/go-id3v2/issues/65 regression.
 	s.AddFrame(PictureFrame{Description: "A", PictureType: 0x01})
 	testSequenceCount(t, s, 2)
 	testFrameUniqueIdentifier(t, s.Frames()[0], "00A")
@@ -93,7 +93,7 @@ func TestSequenceUDTFsUniqueness(t *testing.T) {
 	testSequenceAB(t, s)
 
 	// If one more frame added with same unique identifier, it should rewrite the old one.
-	// See https://github.com/joseavilasg/id3v2/issues/42
+	// See https://github.com/joseavilasg/go-id3v2/issues/42
 	valueOfLastFrame := s.Frames()[1].(UserDefinedTextFrame).Value
 	if valueOfLastFrame != "C" {
 		t.Fatalf("Expected value of UserDefinedTextFrame %q, got %q", "C", valueOfLastFrame)

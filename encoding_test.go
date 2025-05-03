@@ -26,7 +26,7 @@ func TestDecodeText(t *testing.T) {
 	}
 }
 
-// See https://github.com/joseavilasg/id3v2/pull/74
+// See https://github.com/joseavilasg/go-id3v2/pull/74
 func TestDecodeTextParallel(t *testing.T) {
 	testCases := []struct {
 		src  []byte
@@ -105,7 +105,7 @@ func TestEncodeWriteText(t *testing.T) {
 	}
 }
 
-// See https://github.com/joseavilasg/id3v2/issues/51.
+// See https://github.com/joseavilasg/go-id3v2/issues/51.
 func TestUnsynchronisedLyricsFrameWithUTF16(t *testing.T) {
 	contentDescriptor := "Content descriptor"
 	lyrics := "Lyrics"
