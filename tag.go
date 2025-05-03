@@ -73,7 +73,7 @@ func (tag *Tag) AddUnsynchronisedLyricsFrame(uslf UnsynchronisedLyricsFrame) {
 	tag.AddFrame(tag.CommonID("Unsynchronised lyrics/text transcription"), uslf)
 }
 
-// AddSynchronisedLyricsFrame adds the unsynchronised lyrics/text frame
+// AddSynchronisedLyricsFrame adds the synchronised lyrics/text frame
 // to tag.
 func (tag *Tag) AddSynchronisedLyricsFrame(sylf SynchronisedLyricsFrame) {
 	tag.AddFrame(tag.CommonID("Synchronised lyrics/text"), sylf)
