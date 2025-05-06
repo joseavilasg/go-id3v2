@@ -1,3 +1,7 @@
+> [!NOTE]
+> This project is a fork of [n10v/id3v2](https://github.com/n10v/id3v2), which has not been actively maintained.  
+> Support for synced lyrics has been added, and fixes will be applied as needed.
+
 # id3v2
 
 Implementation of ID3 v2.3 and v2.4 in native Go.
